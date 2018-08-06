@@ -1,0 +1,17 @@
+{
+  "name": "swagger-smoke",
+  "version": "0.0.1",
+  "description": "Automatic sanity tests agains Swagger API",
+  "main": "./lib/index.js",
+  "author": "Ihor Lutsyk",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "json-schema-faker": "0.5.0-rc15",
+    "jsonpath": "1.0.0",
+    "lodash": "4.17.10",
+    "supertest": "3.1.0",
+    "swagger-parser": "5.0.2",
+    "z-schema": "3.22.0"
+  }
+}
