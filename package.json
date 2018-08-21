@@ -1,6 +1,6 @@
 {
   "name": "swagger-smoke",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/lutsykigor/swagger-smoke.git"
