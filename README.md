@@ -116,7 +116,7 @@ validator.security('token_auth', async (metadata, path, method, responseDefiniti
 	return `Bearer ${accessToken}`;
 });
 
-// 	authorization multiple headers
+// authorization multiple headers
 validator.security('custom_auth', async () => {
     return {
         Authorization: 'Basic ...',
@@ -127,8 +127,9 @@ validator.security('custom_auth', async () => {
 
 ## Options
 Library accepts `options` object for tests flow customization, available options:
+
 | Option Name  | Type | Description |
-| ------------- | ------------- | ------------- |
+| ---| --- | --- |
 | bodyFakeOptions | Object |
 [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker#custom-options) custom options for faking payloads, example: ```{ alwaysFakeOptionals: true, failOnInvalidFormat: false }``` |
 | disable | Array<string> | List of endpoints that should be skipped, example `['get:/user/info']` |
