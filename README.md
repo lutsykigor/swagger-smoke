@@ -3,9 +3,12 @@ Semi-automated Swagger API Sanity Tests
 
 This library might be helpful for testing Swagger powered rest APIs.
 Idea is to scaffold Swagger file and get information about all endpoints, run API and run automatic tests against that API basing on Swagger metadata.
+
 All path, query and body payloads are faked by default, and there is an option to supply different middlewares that will provide actual parameter values or payload parts.
+
 There is an option to provide security middlewares as well.
-The number of tests equals number of endpoints multiplied to number of responses defined for these endpoints in Swagger.
+
+The number of tests equals number of endpoints multiplied by number of responses defined for these endpoints in Swagger.
 If some middleware parameters or security token values should be cached, it is responsibility of library users to cache them. This library will call middleware everytime it needs to get parameter or security header value.
 
 Example:
@@ -48,14 +51,18 @@ validator.runTests(swaggerApp).then(result => console.log(JSON.stringify(result)
 ## Middlewares
 ### Parameters
 To provide specific values for parameters used in path, query or body, `params` method should be used. If single object is passed to that method, every field of that object is treated as a separate parameter and is used at tests runtime:
+
 ```javascript
 testApp.params({
   userId: 'value',
   length: 'value'
 });
 ```
+
 These params are static and will be used for all fieds that have corresponding names in all tests.
+
 To provide parameter values that have asyncronous nature or provide different parameter values depends on endpoint path, method or response status code, overloaded `params` method should be used.
+
 First parameter is a endpoint path name as defined in Swagger, second is a callback function that will be called to get actual security headers value. Callback is invoked with 3 parameters (`path`, `method`, `responseDefinitionName`) at a runtime.
 
 Examples:
