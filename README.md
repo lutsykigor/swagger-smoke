@@ -130,8 +130,7 @@ Library accepts `options` object for tests flow customization, available options
 
 | Option Name  | Type | Description |
 | ---| --- | --- |
-| bodyFakeOptions | Object |
-[json-schema-faker](https://github.com/json-schema-faker/json-schema-faker#custom-options) custom options for faking payloads, example: ```{ alwaysFakeOptionals: true, failOnInvalidFormat: false }``` |
+| bodyFakeOptions | Object | [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker#custom-options) custom options for faking payloads, example: ```{ alwaysFakeOptionals: true, failOnInvalidFormat: false }``` |
 | disable | Array<string> | List of endpoints that should be skipped, example `['get:/user/info']` |
 | forceAuthorizationHeader  | boolean | Adds security headers to every request even if security is not specified at Swagger endpoint level, uses first security definition that was provided  |
 | notRequiredPropertiesValidation | boolean | True to force validating all not required fields
