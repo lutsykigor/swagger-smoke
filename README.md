@@ -146,7 +146,10 @@ Library accepts `options` object for tests flow customization, available options
 | successHttpCode | integer | Default HTTP status code that is used if one is not provided in Swagger method definition, if not provided `200` is used |
 | zSchema | Object | [z-schema](https://github.com/zaggino/z-schema#options) custom options for faking payloads, example: ```{ ignoreUnknownFormats: true }``` |
 
+## Output screenshot
+![Console Output](https://drive.google.com/file/d/1ccR0UdNSRS5BDMfTwIztLL4fYooWEkZo/view?usp=sharing)
 
+## Misc
 Project is in early phase, there are many unsupported cases. Here is list of TODO:
 - test different content types
 - add input params validation
