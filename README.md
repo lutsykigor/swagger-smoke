@@ -147,7 +147,7 @@ Library accepts `options` object for tests flow customization, available options
 | zSchema | Object | [z-schema](https://github.com/zaggino/z-schema#options) custom options for faking payloads, example: ```{ ignoreUnknownFormats: true }``` |
 
 ## Output screenshot
-![Console Output](https://drive.google.com/file/d/1ccR0UdNSRS5BDMfTwIztLL4fYooWEkZo/view?usp=sharing)
+![Console Output](https://lh3.googleusercontent.com/bDyciLss6kpZRa0vSsi1d8me2c-GvST1VuciWdGygkBxv4RaMH-Jyv_sbyTfC3iGpI-q-d4sm-Q88NJN47KT=w3360-h1692)
 
 ## Misc
 Project is in early phase, there are many unsupported cases. Here is list of TODO:
