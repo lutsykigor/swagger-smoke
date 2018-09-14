@@ -1,6 +1,6 @@
 {
   "name": "swagger-smoke",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/lutsykigor/swagger-smoke.git"
@@ -10,7 +10,11 @@
   "main": "./lib/index.js",
   "author": "Ihor Lutsyk",
   "license": "MIT",
-  "keywords": ["sanity", "swagger", "test"],
+  "keywords": [
+    "sanity",
+    "swagger",
+    "test"
+  ],
   "dependencies": {
     "chalk": "2.4.1",
     "json-schema-faker": "0.5.0-rc15",
