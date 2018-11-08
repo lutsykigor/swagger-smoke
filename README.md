@@ -8,7 +8,7 @@ All path, query and body payloads are faked by default, and there is an option t
 
 There is an option to provide security middlewares as well.
 
-The number of tests equals number of endpoints multiplied by number of responses defined for these endpoints in Swagger.
+There might be multiple tests per endpoint.
 If some middleware parameters or security token values should be cached, it is responsibility of library users to cache them. This library will call middleware everytime it needs to get parameter or security header value.
 
 Example:
